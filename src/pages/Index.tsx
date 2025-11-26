@@ -81,13 +81,13 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20">
+      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 lg:pt-20">
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-6 sm:space-y-8 animate-fade-in">
-              <div className="glass-heavy rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 space-y-4 sm:space-y-6">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              <div className="glass-heavy rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 space-y-4 sm:space-y-6 shadow-elegant">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
                   A Smarter Way to Move, Park & Travel
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground">
@@ -105,7 +105,7 @@ const Index = () => {
                   <Button 
                     type="submit"
                     size="lg"
-                    className="h-12 sm:h-14 px-6 sm:px-8 bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth text-base sm:text-lg font-semibold"
+                    className="h-12 sm:h-14 px-6 sm:px-8 bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-smooth text-base sm:text-lg font-semibold shadow-lg"
                   >
                     Notify Me
                   </Button>
@@ -144,7 +144,7 @@ const Index = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="glass rounded-2xl sm:rounded-3xl p-6 sm:p-7 lg:p-8 space-y-3 sm:space-y-4 hover:scale-105 transition-smooth animate-fade-in"
+                className="glass rounded-2xl sm:rounded-3xl p-6 sm:p-7 lg:p-8 space-y-3 sm:space-y-4 hover:scale-105 hover:shadow-elegant transition-smooth animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-primary text-primary-foreground flex items-center justify-center">
@@ -165,8 +165,8 @@ const Index = () => {
       {/* Launching Soon Banner */}
       <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-7xl">
-          <div className="glass-heavy rounded-2xl sm:rounded-3xl p-8 sm:p-12 lg:p-16 text-center space-y-4 sm:space-y-6">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+          <div className="glass-heavy rounded-2xl sm:rounded-3xl p-8 sm:p-12 lg:p-16 text-center space-y-4 sm:space-y-6 shadow-elegant">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
               Launching in 2025
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
