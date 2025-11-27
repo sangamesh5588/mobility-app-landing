@@ -86,8 +86,8 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-6 sm:space-y-8 animate-fade-in">
-              <div className="glass-heavy rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 space-y-4 sm:space-y-6 shadow-elegant">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+              <div className="glass-heavy rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-12 space-y-4 sm:space-y-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-foreground">
                   A Smarter Way to Move, Park & Travel
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground">
@@ -105,7 +105,7 @@ const Index = () => {
                   <Button 
                     type="submit"
                     size="lg"
-                    className="h-12 sm:h-14 px-6 sm:px-8 bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-smooth text-base sm:text-lg font-semibold shadow-lg"
+                    className="h-12 sm:h-14 px-6 sm:px-8 bg-primary text-primary-foreground hover:bg-muted transition-smooth text-base sm:text-lg font-semibold"
                   >
                     Notify Me
                   </Button>
@@ -119,10 +119,9 @@ const Index = () => {
                 <img 
                   src={heroMockup} 
                   alt="Mobile App Mockup" 
-                  className="w-64 sm:w-80 md:w-96 lg:max-w-md xl:max-w-lg drop-shadow-2xl"
+                  className="w-64 sm:w-80 md:w-96 lg:max-w-md xl:max-w-lg"
                 />
               </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-primary/10 rounded-full blur-3xl -z-10" />
             </div>
           </div>
         </div>
@@ -144,10 +143,10 @@ const Index = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="glass rounded-2xl sm:rounded-3xl p-6 sm:p-7 lg:p-8 space-y-3 sm:space-y-4 hover:scale-105 hover:shadow-elegant transition-smooth animate-fade-in"
+                className="glass rounded-xl p-6 sm:p-7 lg:p-8 space-y-3 sm:space-y-4 hover:bg-muted transition-smooth animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-primary text-primary-foreground flex items-center justify-center">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-lg bg-primary text-primary-foreground flex items-center justify-center">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold">
@@ -165,8 +164,8 @@ const Index = () => {
       {/* Launching Soon Banner */}
       <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-7xl">
-          <div className="glass-heavy rounded-2xl sm:rounded-3xl p-8 sm:p-12 lg:p-16 text-center space-y-4 sm:space-y-6 shadow-elegant">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+          <div className="glass-heavy rounded-xl p-8 sm:p-12 lg:p-16 text-center space-y-4 sm:space-y-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
               Launching in 2025
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
@@ -202,16 +201,16 @@ const Index = () => {
 
             <div className="space-y-4 sm:space-y-6">
               <div className="flex gap-3 sm:gap-4 justify-start md:justify-end">
-                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full glass flex items-center justify-center hover:scale-110 transition-smooth">
+                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
                   <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full glass flex items-center justify-center hover:scale-110 transition-smooth">
+                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
                   <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full glass flex items-center justify-center hover:scale-110 transition-smooth">
+                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
                   <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full glass flex items-center justify-center hover:scale-110 transition-smooth">
+                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
                   <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               </div>
