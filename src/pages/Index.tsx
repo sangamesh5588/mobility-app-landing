@@ -72,7 +72,7 @@ const Index = () => {
             <Button 
               onClick={handleNotify}
               size="sm"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth sm:text-base text-sm"
+              className="bg-primary text-primary-foreground hover:bg-muted transition-smooth sm:text-base text-sm rounded-sm"
             >
               Notify Me
             </Button>
@@ -86,8 +86,8 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-6 sm:space-y-8 animate-fade-in">
-              <div className="glass-heavy rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-12 space-y-4 sm:space-y-6">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-foreground">
+              <div className="glass-heavy rounded-sm p-6 sm:p-8 lg:p-12 space-y-4 sm:space-y-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-foreground tracking-tight">
                   A Smarter Way to Move, Park & Travel
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground">
@@ -100,12 +100,12 @@ const Index = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="flex-1 h-12 sm:h-14 text-base sm:text-lg bg-background/50 backdrop-blur-sm border-2 focus:border-primary"
+                    className="flex-1 h-12 sm:h-14 text-base sm:text-lg bg-input border border-border focus:border-primary rounded-sm"
                   />
                   <Button 
                     type="submit"
                     size="lg"
-                    className="h-12 sm:h-14 px-6 sm:px-8 bg-primary text-primary-foreground hover:bg-muted transition-smooth text-base sm:text-lg font-semibold"
+                    className="h-12 sm:h-14 px-6 sm:px-8 bg-primary text-primary-foreground hover:bg-muted transition-smooth text-base sm:text-lg font-semibold rounded-sm"
                   >
                     Notify Me
                   </Button>
@@ -143,10 +143,10 @@ const Index = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="glass rounded-xl p-6 sm:p-7 lg:p-8 space-y-3 sm:space-y-4 hover:bg-muted transition-smooth animate-fade-in"
+                className="glass rounded-sm p-6 sm:p-7 lg:p-8 space-y-3 sm:space-y-4 hover:bg-muted transition-smooth animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-lg bg-primary text-primary-foreground flex items-center justify-center">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-sm bg-primary text-primary-foreground flex items-center justify-center">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold">
@@ -164,8 +164,8 @@ const Index = () => {
       {/* Launching Soon Banner */}
       <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-7xl">
-          <div className="glass-heavy rounded-xl p-8 sm:p-12 lg:p-16 text-center space-y-4 sm:space-y-6">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+          <div className="glass-heavy rounded-sm p-8 sm:p-12 lg:p-16 text-center space-y-4 sm:space-y-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
               Launching in 2025
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
@@ -188,11 +188,11 @@ const Index = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="flex-1 bg-background/50 h-11 sm:h-12"
+                  className="flex-1 bg-input h-11 sm:h-12 rounded-sm border-border"
                 />
                 <Button 
                   type="submit"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 h-11 sm:h-12"
+                  className="bg-primary text-primary-foreground hover:bg-muted h-11 sm:h-12 rounded-sm"
                 >
                   Subscribe
                 </Button>
@@ -201,16 +201,16 @@ const Index = () => {
 
             <div className="space-y-4 sm:space-y-6">
               <div className="flex gap-3 sm:gap-4 justify-start md:justify-end">
-                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
+                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
                   <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
+                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
                   <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
+                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
                   <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
+                <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 bg-muted flex items-center justify-center hover:bg-accent transition-smooth">
                   <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               </div>
