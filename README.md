@@ -1,73 +1,28 @@
-# Welcome to your Lovable project
+# 🚗 Mobility — Smart Transportation & Ride Platform Showcase
 
-## Project info
+[![React](https://img.shields.io/badge/React-18.x-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
-**URL**: https://lovable.dev/projects/ddedbef2-4b04-4f54-a549-1603ce7d4bb4
+> **Mobility** is a high-conversion marketing landing page and product showcase for urban mobility, on-demand cab hailing, and shared transport services.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- ⚡ **High-Impact Hero Section:** Conversion-optimized download links with app preview mockups.
+- 📍 **Feature Showcase:** Interactive ride tracking benefits, safety guarantees, and driver earnings.
+- 📈 **Performance-First:** Sub-second page load times with zero layout shift.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ddedbef2-4b04-4f54-a549-1603ce7d4bb4) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🚀 Quick Start
+```bash
+git clone https://github.com/sangamesh5588/mobility-app-landing.git
+cd mobility-app-landing
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ddedbef2-4b04-4f54-a549-1603ce7d4bb4) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🛡️ License
+Copyright © 2026 Sangamesh K. All rights reserved.
